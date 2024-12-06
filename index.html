@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>CV Dmitry Tsarkouny</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="col_left">
+        <div class="header__img">
+          <img src="assets/images/forcv.jpg" alt="avatar">
+        </div>
+      </div>
+      <div class="col_right header__info">
+
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#contacts" onclick="scrollToTarget(event, 'contacts')">Contacts</a>
+              </li>
+              <li class="menu__item">
+                <a href="#about" onclick="scrollToTarget(event, 'about')">About me</a>
+              </li>
+              <li class="menu__item">
+                <a href="#skills" onclick="scrollToTarget(event, 'skills')">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="#education" onclick="scrollToTarget(event, 'education')">Education</a>
+              </li>
+              <li class="menu__item">
+                <a href="#experience" onclick="scrollToTarget(event, 'experience')">Experience</a>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+        <div class="header__titles">
+          <h1 class="header__title">Dmitry Tserkovny</h1>
+          <h2 class="header__subtitle">Trainee Developer (C++/C#)</h2>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="col_left">
+        <ul class="main__birthday">
+          <li class="main__item">
+            February 5, 1987 (37 y.o.)
+          </li>
+        </ul>
+        <section id="contacts" class="main__block contacts">
+          <h3 class="main__title">Contacts</h3>
+          <ul>
+            <li class="main__item">
+              <div class="contacts__item">
+                <img src="assets/images/periscope.png" alt="location">
+                &nbsp;Mogilev, Belarus
+              </div>
+            </li>
+            <li class="main__item">
+              <div class="contacts__item">
+                <img src="assets/images/phone-solid.png" alt="phone">
+              </div>
+              &nbsp;+375 29 260-86-16
+            </li>
+            <li class="main__item">
+              <div class="contacts__item">
+                <img src="assets/images/envelope.png" alt="e-mail">
+              </div>
+              &nbsp;tsarkounydmitry@<wbr>gmail.com
+            </li>
+            <li class="main__item">
+              <a class="contacts__link" href="https://www.linkedin.com/in/dmitry-tsarkouny/">
+                <img src="assets/images/linkedin.png" alt="linkedin">
+                &nbsp;https://www.<wbr>linkedin.<wbr>com/<wbr>in/<wbr>dmitry-<wbr>tsarkouny
+              </a>
+            </li>
+            <li class="main__item">
+              <a class="contacts__link" href="https://github.com/DmitryTsar">
+                <img src="assets/images/github.png" alt="github">
+                &nbsp;https://github.com/<wbr>Dmitry<wbr>Tsar
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section id="skills" class="main__block">
+          <h3 class="main__title">Skills</h3>
+            <ul>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;C++
+              </li>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;C#, .NET
+              </li>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;Java
+              </li>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;MSSQL
+              </li>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;Apache JMeter, NUnit
+              </li>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;UX/UI Design Tools
+              </li>
+              <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;GitHub
+              </li>
+            </ul>
+        </section>
+        <section id="education" class="main__block">
+          <h3 class="main__title">Education</h3>
+            <ul>
+              <li class="main__item">School of Business and Management of Technology of BSU&nbsp;/<br>
+                <span class="accent">Software of Information Systems</span><br>
+                <span class="small_text">Mar 2022 - Mar 2024</span><br>
+                <span class="small_text">Computer networks basics, software design, OOP, database management and design</span>
+              </li>
+              <li class="main__item">Belarusian State Aviation Academy&nbsp;/<br>
+                <span class="accent">Aircraft and Engine Maintenance</span><br>
+                <span class="small_text">2006 - 2012</span><br>
+                <span class="small_text">Aircraft operation, maintenance, and repair management</span>
+              </li>
+            </ul>
+        </section>
+        <section id="languages" class="main__block">
+          <h3 class="main__title">Languages</h3>
+            <ul>
+              <li class="main__item">Russian&nbsp;&mdash;&nbsp;native speaker</li>
+              <li class="main__item">English&nbsp;&mdash;&nbsp;A2 - B1</li>
+            </ul>
+        </section>
+      </div>
+      <div class="col_right main__info">
+        <section id="about" class="main__block about">
+          <h3 class="main__title">About me</h3>
+          <hr class="main__line">
+          <p class="main__item">
+            I am a motivated and ambitious IT specialist in the early stages of my career, with foundational knowledge in computer networks, software design, object-oriented programming, database management and design, and software testing. I hold a degree in Software of Information Systems from the School of Business and Management of Technology of BSU, where I gained hands-on experience with programming languages like C++, C#, and Java, testing tools such as NUnit and Apache JMeter, as well as tools for UX/UI design and version control systems such as GitHub.
+          </p>
+          <p class="main__item">
+            I bring a strong analytical mindset, attention to detail, and a commitment to learning. Throughout my career in the aviation industry, I have successfully applied my technical skills, demonstrating adaptability and a drive for growth. My ability to analyze complex systems and develop efficient solutions has been key to my professional development.
+          </p>
+          <p class="main__item">
+            Eager to take on new challenges, I am constantly seeking opportunities to expand my expertise and contribute to innovative IT projects.
+          </p>
+        </section>
+        <section id="experience" class="main__block">
+          <h3 class="main__title">Experience</h3>
+          <hr class="main__line">
+          <div class="main__skills skills">
+            <p class="skills__list">
+              <span class="skills__title">Skills: </span>Aviation equipment failure analysis · Using diagnostic equipment · Use of automated maintenance management system for aircraft and engines
+            </p>
+          </div>
+          <div class="main__job job">
+            <h4 class="job__title">Aircraft maintenance, repair and diagnostics engineer</h4>
+            <p class="main__item job__company">Corporate Union "ELISA" (Petropavlovsk, Kazakhstan), <span class="job__dates">May – Aug 2018, Apr – Aug 2024</span></p>
+            <p class="main__item job__company">LLC "Zapadnoe" (Brest, Belarus), <span class="job__dates">Mar 2019 - Sep 2024</span></p>
+            <p class="main__item job__company">Agrochem Company Ltd (Medani, Sudan), <span class="job__dates">Sep - Jan (2022-2023)</span></p>
+            <p class="main__item job__company">Aviation Company "Bashmia" (Medani, Sudan), <span class="job__dates">Sep - Jan (2017-2021)</span></p>
+            <p class="main__item job__company">CJSC Agroindustrial Complex "Zarya" (Mogilev, Belarus), <span class="job__dates">2013-2020</span></p>
+            <ul class="main__item job__about">
+              <li>Ensuring flight safety</li>
+              <li>Maintenance, repair and diagnostics of aviation equipment</li>
+              <li>Technical personnel management</li>
+              <li>Preparation of operational documentation for the airline</li>
+              <li>Preparation of documentation for the airline's licensing</li>
+              <li>As part of the commission - conducting training and certification renewals for aviation personnel</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="js/index.js"></script>
+</body>
+</html>
