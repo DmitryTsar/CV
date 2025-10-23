@@ -32,3 +32,13 @@ function scrollToTarget(event, targetId) {
   const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
   window.scrollTo({ top: targetPosition, behavior: 'smooth' });
 }
+// DYNAMIC LOADING DOTS
+const loadingElements = document.querySelectorAll('.loading-dots');
+
+loadingElements.forEach((el, index) => {
+    let dotCount = 0;
+    setInterval(() => {
+        dotCount = (dotCount + 1) % 4; // 0..3 точки
+        el.textContent = 'Loading' + '.'.repeat(dotCount);
+    }, 500 + index * 200); // немного разная скорость для каждого
+});

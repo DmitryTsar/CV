@@ -398,7 +398,29 @@ body {
   background-color: #6e7580;
   border-radius: 50%;
 }
+/* Loading dots animation for Git projects */
+.loading-dots {
+    font-weight: bold;
+    color: #007acc; /* синий акцент */
+}
 
+@keyframes dots {
+    0%, 20% {
+        content: '';
+    }
+
+    40% {
+        content: '.';
+    }
+
+    60% {
+        content: '..';
+    }
+
+    80%, 100% {
+        content: '...';
+    }
+}
 .courses__item {
   font-size: 16px;
   padding-bottom: 16px;
@@ -545,6 +567,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
+  }
+  .main_item_lang{
+    margin-left: 60px !important;
   }
   .contacts__item {
     text-align: left;
